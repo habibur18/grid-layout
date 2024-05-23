@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1.4rem;
+  color: white;
+  font-weight: bold;
+}
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.grid-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 100px);
+  gap: 5px;
+  grid-template-areas:
+    "one one two two two three three three three four four four"
+    "five five two two two three three three three six six six"
+    "seven seven eight nine nine three three three three ten ten ten"
+    "eleven eleven eleven eleven eleven three three three three twelve twelve twelve";
+}
